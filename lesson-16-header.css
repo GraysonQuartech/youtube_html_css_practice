@@ -1,0 +1,217 @@
+.header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(161, 161, 161);
+    z-index: 100;
+
+}
+
+
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hamgburger-icon {
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.hamburger-icon:active {
+    opacity: 0.2;
+}
+
+.youtube-icon {
+    height: 20px;
+    cursor: pointer;
+}
+.youtube-icon:active{
+    opacity: 0.6;
+}
+
+
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 160px;
+    margin-right: 45px;
+    max-width: 600px;
+}
+
+input.search-bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: rgb(189, 187, 187);
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 5px rgb(78, 77, 77) 0.5;
+    width: 0;
+  }
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial, Helvetica, sans-serif;  
+  font-size: 16px;
+}
+.search-button {
+    height: 40px;
+    width: 55px;
+    margin-left: -1px;
+    border-color: rgb(192, 191, 191);
+    border-style: solid;
+    border-width: 1px;
+    margin-left: -1;
+    
+}
+
+.search-button, .mic-button, .create, .tools, .notif-icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-button .tool-tip, 
+.mic-button .tool-tip, 
+.create .tool-tip, 
+.tools .tool-tip, 
+.notif-icon-div .tool-tip {
+    position: absolute;
+    background-color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 2px;
+    opacity: 0;
+    bottom: -40px;
+    font-family: roboto;
+    z-index: 300;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space:nowrap;
+}
+.search-button:hover .tool-tip, .mic-button:hover .tool-tip, .create:hover .tool-tip,  .tools:hover .tool-tip,  .notif-icon-div:hover .tool-tip {
+    opacity: 0.95;
+}
+
+.search-icon {
+    height: 35px;
+    width: 35px;
+}
+.search-button:hover{
+    opacity: 0.7;
+}
+.search-button:active{
+    opacity: 0.5;
+}
+
+.mic-button {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.mic-icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: none;
+}
+.mic-button:hover{
+    opacity: 0.7;
+}
+.mic-button:active{
+    opacity: 0.5;
+}
+
+
+
+.right-section {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10px;
+    max-width: 220px;
+    flex-shrink: 0;
+}
+
+.create-icon {
+    width: 34px;
+}
+.create-icon:hover {
+    opacity: 0.7;
+}
+.create-icon:active {
+    opacity: 0.5;
+}
+
+.square-icon {
+    width: 30px;
+}
+.square-icon:hover {
+    opacity: 0.7;
+}
+.square-icon:active {
+    opacity: 0.5;
+}
+
+
+
+.notif-icon {
+    width: 30px;
+}
+.notif-icon:hover {
+    opacity: 0.7;
+}
+.notif-icon:active {
+    opacity: 0.5;
+}
+.notif-icon-div {
+    position: relative;
+}
+.notification {
+    position: absolute;
+    background-color: rgb(214, 20, 20);
+    color: white;
+    top: 0px;
+    right: 0px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    font-family: roboto;
+    font-size: 12px;
+}
+
+
+
+.profile-icon {
+    height: 40px;
+    width: 40px;
+    object-position: bottom;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
